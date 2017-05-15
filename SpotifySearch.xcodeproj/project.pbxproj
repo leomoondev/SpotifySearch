@@ -18,6 +18,7 @@
 		DA5540751EC77C9800564014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA5540731EC77C9800564014 /* LaunchScreen.storyboard */; };
 		DA5540801EC77C9800564014 /* SpotifySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55407F1EC77C9800564014 /* SpotifySearchTests.swift */; };
 		DA55408B1EC77C9800564014 /* SpotifySearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55408A1EC77C9800564014 /* SpotifySearchUITests.swift */; };
+		DAA89A161ECA2D4700132E00 /* AudioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA89A151ECA2D4700132E00 /* AudioVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DA5540861EC77C9800564014 /* SpotifySearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifySearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA55408A1EC77C9800564014 /* SpotifySearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifySearchUITests.swift; sourceTree = "<group>"; };
 		DA55408C1EC77C9800564014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA89A151ECA2D4700132E00 /* AudioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioVC.swift; sourceTree = "<group>"; };
 		DFB0179BDA704A34C57273C6 /* Pods_SpotifySearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifySearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DA2A0080B035AF14A90E0A /* Pods-SpotifySearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifySearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotifySearchTests/Pods-SpotifySearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 				DA5540731EC77C9800564014 /* LaunchScreen.storyboard */,
 				DA5540761EC77C9800564014 /* Info.plist */,
 				DA55406E1EC77C9800564014 /* SpotifySearch.xcdatamodeld */,
+				DAA89A151ECA2D4700132E00 /* AudioVC.swift */,
 			);
 			path = SpotifySearch;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				DA55406A1EC77C9800564014 /* ViewController.swift in Sources */,
 				DA5540701EC77C9800564014 /* SpotifySearch.xcdatamodeld in Sources */,
 				DA5540681EC77C9800564014 /* AppDelegate.swift in Sources */,
+				DAA89A161ECA2D4700132E00 /* AudioVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +715,7 @@
 				DA5540911EC77C9800564014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA5540921EC77C9800564014 /* Build configuration list for PBXNativeTarget "SpotifySearchTests" */ = {
 			isa = XCConfigurationList;
@@ -719,6 +724,7 @@
 				DA5540941EC77C9800564014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA5540951EC77C9800564014 /* Build configuration list for PBXNativeTarget "SpotifySearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -727,6 +733,7 @@
 				DA5540971EC77C9800564014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
