@@ -35,9 +35,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="mdr-La-kef">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="7To-BK-O3Q" id="BSr-dX-p40"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="102" id="9vK-C0-WBk">
-                                <rect key="frame" x="0.0" y="28" width="375" height="102"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9vK-C0-WBk" id="KfG-R5-i6b">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
@@ -77,6 +85,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="72l-oJ-Ahz"/>
+                    <connections>
+                        <outlet property="searchBar" destination="mdr-La-kef" id="ySO-1W-S3d"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RaZ-UI-Lhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -19,18 +19,29 @@ struct post {
     let name : String!
     let previewURL : String!
 }
-class TableViewController: UITableViewController {
+class TableViewController: UITableViewController, UISearchBarDelegate {
     
+    @IBOutlet weak var searchBar: UISearchBar!
     var posts = [post]()
     
-    var searchURL = "https://api.spotify.com/v1/search?q=Drake&type=track"
+    var searchURL = String()
     
     typealias JSONStandard = [String : AnyObject]
-    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let keywords = searchBar.text
+        let finalKeywords = keywords?.replacingOccurrences(of: " ", with: "+")
+        searchURL = "https://api.spotify.com/v1/search?q=\(finalKeywords!)&type=track"
+        
+        print(searchURL)
+        
+        callAlamo(url: searchURL)
+        
+        self.view.endEditing(true)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        callAlamo(url: searchURL)
     }
 
     // Load some data
