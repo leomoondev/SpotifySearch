@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Sae-q5-2l2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Sae-q5-2l2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -118,6 +118,14 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-ab-LFc">
+                                            <rect key="frame" x="164" y="490" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="playPauseButtonTapped:" destination="HvF-Ns-o9S" eventType="touchUpInside" id="az3-rQ-TXG"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="YCK-ut-Fq5" secondAttribute="trailing" constant="68" id="Njg-RA-joa"/>
@@ -146,6 +154,7 @@
                     <connections>
                         <outlet property="backgroundImageView" destination="jx3-MU-CHn" id="oZi-7A-fxM"/>
                         <outlet property="mainImageView" destination="Ap6-fY-aPm" id="BOK-OF-usa"/>
+                        <outlet property="playPauseButton" destination="6pc-ab-LFc" id="5aN-kh-aYF"/>
                         <outlet property="songTitleLabel" destination="YCK-ut-Fq5" id="Ldm-uk-tyN"/>
                     </connections>
                 </viewController>
